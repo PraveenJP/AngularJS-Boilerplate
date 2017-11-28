@@ -1,0 +1,26 @@
+<doctype HTML>
+<html lang="en" ng-app="app">
+    <head>
+        <meta charset="utf-8"/>
+        <title>AngularJS</title>
+        <link rel="shortcut icon" href="favicon.ico"/>
+        <!--css stylesheet-->
+        <link rel="stylesheet" href="dist/css/main.min.css" />
+    </head>
+    <body ng-cloak class="hold-transition skin-blue sidebar-mini">
+        <!--Main Content-->
+        <div class="container">
+            <div ui-view></div>
+        </div>
+        <!--Library Files-->
+        <script src="dist/js/scripts.min.js"></script>
+        <!--Angular App-->
+        <script src="components/app.min.js"></script>
+        <!--Hide interpolation when page load -->
+        <style type="text/css">
+            [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+                display: none !important;
+            }
+        </style>
+    </body>
+</html>
